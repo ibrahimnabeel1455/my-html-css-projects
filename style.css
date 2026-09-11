@@ -1,0 +1,49 @@
+* {
+color:blue;
+}
+
+p {
+    color:green;
+}
+.para{
+    color:red;
+}
+p > b > u {
+    color:yellow;
+}
+#del {
+     background-color:purple;
+}
+p+ a {
+    color:orange;
+}
+.prod-card {
+    border: 1px solid rgb(181, 178, 178);
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+}
+img.prod-img {
+    width: 100%;
+}
+
+.prod-card .add-cart-btn {
+    width: 100%;
+    background-color:blue;
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.prod-card .prod-title {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.prod-card .prod-price {
+    margin: 10px 0px;
+    font-size:  20px;
+    /* margin-top: 0px; */
+    /* margin-bottom: 0px; */
+}
