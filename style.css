@@ -47,3 +47,375 @@ img.prod-img {
     /* margin-top: 0px; */
     /* margin-bottom: 0px; */
 }
+.parent-dev {
+    border:1px solid red;
+    width: 50%;
+    height: 250px;
+
+}
+.dummy-para {
+    /* background-color: yellow; */
+    /* color: red; */
+    /* color: rgb(0, 0, 255); */
+    /* color: #FFD700; */
+    /* background color: #FFD700; */
+    background-color: rgba(0,0,20,0);
+    /* background color: red; */
+}
+.css-color-1{
+   height: 50px;
+   background-color: rgba(0, 0, 250, 0.5);  
+}
+.css-color-2 {
+   height: 50px;
+   background-color: rgba(0, 0, 250, 0.7);
+}
+.css-color-3 {
+   height: 50px;
+   background-color: rgba(255, 182, 193, 0.5);
+}
+.css-color-4 {
+   height: 50px;
+   background-color: rgba(255, 255, 0, 0.5);
+}
+.css-color-5 {
+   height: 50px;
+   background-color: rgba(255, 182, 193, 0.5);
+}
+.css-color-6 {
+   height: 50px;
+   background-color: rgba(128, 128, 128, 0.5);
+}
+.css-color-7 {
+   height: 50px;
+   background-color: rgba(173, 216, 230, 0.5);
+}
+.parent-boundary {
+    width: 60%;
+    height: 350px;
+    border: 1px solid red;
+    background-color:aqua;
+    position: relative;
+}
+
+.parent-boundary .ball-1 {
+    border: 1px solid blue;
+    background-color: red;
+    width: 50px;
+    height: 50px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+}
+.parent-boundary .ball-2 {
+    border: 1px solid blue;
+    background-color: black;
+    width: 50px;
+    height: 50px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 0px;
+    right: 0px;
+}
+.parent-boundary .ball-3 {
+    border: 1px solid blue;
+    background-color: green;
+    width: 50px;
+    height: 50px; 
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 0px;
+    left: 0px;
+}
+.parent-boundary .ball-4 {
+    border: 1px solid blue;
+    background-color: yellow;
+    width: 50px;
+    height: 50px; 
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 0px;
+    right: 0px;
+}
+.assignment {
+    width: 30%;
+    height: 350px;
+    border: 1px solid red;
+    background-color:white;
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    gap: 30px;
+}
+.index-boundary {
+    width: 25%;
+    height: 300px;
+    border: 1px solid grey;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+}
+.index-boundary .ball-1 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 135px;
+    left: 40%;
+}
+.dice-1 {
+       width: 30%;
+    height: 350px;
+    border: 1px solid grey;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 50px;
+}
+.dice-1 .dot-1 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+}
+.dice-1 .dot-2 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 10px;
+    right: 10px;
+}
+.dice-2 {
+       width: 30%;
+    height: 350px;
+    border: 1px solid grey;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 50px;
+}
+.dice-2 .dot-1 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+}
+.dice-2 .dot-2 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+     top: 135px;
+    left: 40%;
+}
+.dice-2 .dot-3 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 10px;
+    right: 10px;        
+}
+.dice-3 {
+       width: 30%;
+    height: 350px;
+    border: 1px solid grey;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+   
+}
+.dice-3 .dot-1 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+}
+.dice-3 .dot-2 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+}
+.dice-3 .dot-3 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 10px;
+    right: 10px;        
+}
+.dice-3 .dot-4 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 10px;
+    left: 10px;
+}
+.dice-4 {
+    width: 30%;
+    height: 350px;
+    border: 1px solid grey;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+}
+.dice-4 .dot-1 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+}
+.dice-4 .dot-2 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+}
+.dice-4 .dot-3 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 10px;
+    right: 10px;
+}
+.dice-4 .dot-4 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 10px;
+    left: 10px;
+}
+.dice-4 .dot-5 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 135px;
+    left: 40%;
+}
+.dice-5 {
+     width: 30%;
+    height: 350px;
+    border: 1px solid grey;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+}
+.dice-5 .dot-1 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+   top: 10px;
+    left: 10px;
+}
+.dice-5 .dot-2 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+     top: 140px;
+    left: 10px;
+}
+.dice-5 .dot-3 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+   bottom: 10px;
+    left: 10px;
+}
+.dice-5 .dot-4 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+     top: 10px;
+    right: 10px;
+}
+.dice-5 .dot-5 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    top: 140px;
+    right: 10px;
+}
+.dice-5 .dot-6 {
+    border: none;
+    background-color: black;
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 10px;
+    right: 10px;
+}
