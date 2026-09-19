@@ -1,10 +1,374 @@
 * {
-color:blue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p {
-    color:green;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
+
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: #e3350d;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffde00;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    background-color: #ffde00;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 80px;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background-color: #e3350d;
+    color: white;
+
+    border: none;
+    padding: 14px 28px;
+
+    border-radius: 25px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #b92708;
+}
+
+.hero-image img {
+    width: 280px;
+
+    transition: 0.3s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ================= POKÉMON SECTION ================= */
+
+.pokemon-section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.pokemon-section > h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.pokemon-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* ================= POKÉMON CARD ================= */
+
+.pokemon-card {
+    width: 230px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-10px);
+}
+
+.pokemon-card img {
+    width: 160px;
+    height: 160px;
+}
+
+.pokemon-card h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.pokemon-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.pokemon-card button {
+    background-color: #e3350d;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.pokemon-card button:hover {
+    background-color: #b92708;
+}
+
+
+/* ================= TYPES ================= */
+
+.types-section {
+    background-color: white;
+
+    padding: 60px 30px;
+
+    text-align: center;
+}
+
+.types-section h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.types-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.type-card {
+    width: 180px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: white;
+}
+
+.electric {
+    background-color: #f5c400;
+}
+
+.fire {
+    background-color: #f4511e;
+}
+
+.water {
+    background-color: #2196f3;
+}
+
+.grass {
+    background-color: #4caf50;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    text-align: center;
+
+    padding: 60px 30px;
+
+    background-color: #ffde00;
+}
+
+.about h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .menu a {
+        display: block;
+        margin: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        width: 220px;
+    }
+}
+@font-face {
+    font-family: roboto-regular;
+    src: url(assets/fonts/roboto-regular.ttf);
+}
+@font-face {
+    
+    font-family: Roboto-Italic;
+    src: url(assets/fonts/roboto/Roboto-Italic.ttf);
+}
+.list {
+    margin: 0px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column-reverse;
+}
+.square {
+    border: 1px solid red;
+    height: 150px;
+    width: 50px;
+}
+.file-types {
+    border: 1px solid blue ;
+    display: flex;
+    gap: 10px;
+    row-gap: 5px;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+
+body {
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'TrebMS', sans-serif;
+}
+.head {
+    color: blue;
+    font-size: 40px;
+    font-style: italic;
+}
+button {
+    cursor: progress;
+}
+a {
+    text-decoration: none;
+    color: aqua;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+.paragraph-1 {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-transform: lowercase;
+    text-decoration: underline;
+    cursor: pointer;
+    line-height: normal;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    text-align: left;
+}
+.lorem-text:hover {
+    text-decoration: overline;
+    color: red;
+    font-size: 40px;
+
+}
+.lorem-text-one:hover {
+    text-decoration: underline;
+    color: blue;
+    font-size: 40px;
+
+}
+
+
+
+
 .para{
     color:red;
 }
@@ -149,8 +513,8 @@ img.prod-img {
     gap: 30px;
 }
 .index-boundary {
-    width: 25%;
-    height: 300px;
+    width: 20%;
+    height: 250px;
     border: 1px solid grey;
     background-color: white;
     position: relative;
@@ -164,18 +528,18 @@ img.prod-img {
     height: 75px; 
     border-radius: 100%;
     position: absolute; 
-    top: 135px;
-    left: 40%;
+    top: 95px;
+    left: 36%;
 }
 .dice-1 {
-       width: 30%;
-    height: 350px;
+       width: 20%;
+    height: 250px;
     border: 1px solid grey;
     background-color: white;
     position: relative;
     border-radius: 10px;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 200px;
 }
 .dice-1 .dot-1 {
     border: none;
@@ -198,14 +562,14 @@ img.prod-img {
     right: 10px;
 }
 .dice-2 {
-       width: 30%;
-    height: 350px;
+       width: 20%;
+    height: 250px;
     border: 1px solid grey;
     background-color: white;
     position: relative;
     border-radius: 10px;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 200px;
 }
 .dice-2 .dot-1 {
     border: none;
@@ -224,8 +588,8 @@ img.prod-img {
     height: 75px; 
     border-radius: 100%;
     position: absolute; 
-     top: 135px;
-    left: 40%;
+     top: 95px;
+    left: 36%;
 }
 .dice-2 .dot-3 {
     border: none;
@@ -238,8 +602,8 @@ img.prod-img {
     right: 10px;        
 }
 .dice-3 {
-       width: 30%;
-    height: 350px;
+       width: 20%;
+    height: 250px;
     border: 1px solid grey;
     background-color: white;
     position: relative;
@@ -288,15 +652,15 @@ img.prod-img {
     left: 10px;
 }
 .dice-4 {
-    width: 30%;
-    height: 350px;
+    width: 20%;
+    height: 250px;
     border: 1px solid grey;
     background-color: white;
     position: relative;
     border-radius: 10px;
     display: inline-block;
     vertical-align: top;
-    margin-left: 50px;
+    margin-left: 200px;
 }
 .dice-4 .dot-1 {
     border: none;
@@ -345,25 +709,25 @@ img.prod-img {
     height: 75px; 
     border-radius: 100%;
     position: absolute; 
-    top: 135px;
-    left: 40%;
+    top: 90px;
+    left: 36%;
 }
 .dice-5 {
-     width: 30%;
-    height: 350px;
+     width: 20%;
+    height: 250px;
     border: 1px solid grey;
     background-color: white;
     position: relative;
     border-radius: 10px;
     display: inline-block;
     vertical-align: top;
-    margin-left: 50px;
+    margin-left: 200px;
 }
 .dice-5 .dot-1 {
     border: none;
     background-color: black;
-    width: 75px;
-    height: 75px; 
+    width: 70px;
+    height: 70px; 
     border-radius: 100%;
     position: absolute; 
    top: 10px;
@@ -372,18 +736,18 @@ img.prod-img {
 .dice-5 .dot-2 {
     border: none;
     background-color: black;
-    width: 75px;
-    height: 75px; 
+    width: 70px;
+    height: 70px; 
     border-radius: 100%;
     position: absolute; 
-     top: 140px;
+     top: 90px;
     left: 10px;
 }
 .dice-5 .dot-3 {
     border: none;
     background-color: black;
-    width: 75px;
-    height: 75px; 
+    width: 70px;
+    height: 70px; 
     border-radius: 100%;
     position: absolute; 
    bottom: 10px;
@@ -392,8 +756,8 @@ img.prod-img {
 .dice-5 .dot-4 {
     border: none;
     background-color: black;
-    width: 75px;
-    height: 75px; 
+    width: 70px;
+    height: 70px; 
     border-radius: 100%;
     position: absolute; 
      top: 10px;
@@ -402,18 +766,18 @@ img.prod-img {
 .dice-5 .dot-5 {
     border: none;
     background-color: black;
-    width: 75px;
-    height: 75px; 
+    width: 70px;
+    height: 70px; 
     border-radius: 100%;
     position: absolute; 
-    top: 140px;
+    top: 90px;
     right: 10px;
 }
 .dice-5 .dot-6 {
     border: none;
     background-color: black;
-    width: 75px;
-    height: 75px; 
+    width: 70px;
+    height: 70px; 
     border-radius: 100%;
     position: absolute; 
     bottom: 10px;
